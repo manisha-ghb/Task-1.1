@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="./LoginSuccess.html" method="get" autocomplete="off">
+        <center>
+        <label for="Username">Username</label>
+        <input type="text" id="Username" name="Username"  placeholder="Email or Phone no" autofocus  required pattern="(?=.*[A-Z])(?=.*[a-z]).{5,20}"><br>
+        <label for="Password">Password</label>
+        <input type="password" id="Password" name="Password" placeholder="Password" autofocus pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}" required><br>
+        <input type="submit" value="Login"><br>
+        <a href="./ForgotPassword.html" target="_blank">Forgot Password</a>
+        <a href="./Register.html" target="_blank">Register Here</a>
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form(Pattern)</title>
+</head>
+<body>
+    <form  action="./response.html" method="get" autocomplete="off">
+        <center><img src="./TSRTC_LOGO.png" alt="TSRTC" width="100"><br>
+            <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1><br>
+            <h2>GENERAL BUS PASS APPLICATION </h2><br>
+            </center>
+            <fieldset>
+                <legend><h2>Application Details</h2></legend>
+                <pre><label for="Name"> Name *         </label><input type="text" required id="Name" name="Name" autofocus pattern="[a-zA-Z]+" placeholder="Name">                          <label for="Name">Father's/Guardian's Name *</label>      <input type="text" required id="Name" name="Name" autofocus pattern="[a-zA-Z]+" placeholder="Name"><br></pre>
+                <pre><label for="DateOfBirth">DateOfBirth *   </label><input type="date" id="DateOfBirth" required name="DateOfBirth" placeholder="DateOfBirth" autofocus>                                   <label for="">Gender *</label>                        <input type="radio" id="Female" name="Gender" required value="Female"><label for="Female">Female</label>     <input type="radio" id="Male" name="Gender" required value="Male"><label for="Male">Male</label> <br></pre>
+               <pre> <label for="">Age  *</label>         <input type="number" id="yrs" name="yrs" required autofocus maxlength="2" minlength="2"><label for="yrs">yr(s)</label><input type="number" id="months" name="months" required autofocus><label for="months">month(s)</label> <input type="number" id="days" name="days" required autofocus><label for="days">day(s)</label></pre>
+               <pre><label for="WhatsappNo">WhatsappNo *</label>    <input type="number" id="WhatsappNo" name="WhatsappNo" required autofocus>                          <label for="Mail">Email *</label>                         <input type="email" id="Mail" name="Mail" required autofocus></pre>
+               <pre><label for="Aadhar">Aadharno *</label>      <input type="number" id="Aadhar" name="Aadhar" required autofocus>                          <label for="photo">Photo *</label>                         <input type="file" id="photo" name="photo" required autofocus></pre>
+            </fieldset><br>
+            <fieldset>
+                <legend><h2>Residential Address Details</h2></legend>
+                <pre><label for="Applicant Address">Applicant Address *</label>  <textarea name="Applicant Address" id="Applicant Address" rows="5" cols="30">Address</textarea>          <label for="district">District *</label>                      <select  id="district"><option value="Hyderabad">Hyderabad</option><option value="Hyderabad">Hyderabad</option></select></pre>
+                <pre><label for="mandal">Mandal *</label>             <select id="mandal"><option value="Hyderabad">Hyderabad</option></select>                            <label for="village">Village *</label>                        <select id="village"><option value="Hyderabad">Hyderabad</option><option value="Hyderabad">Hyderabad</option></select> </pre>
+                <pre><label for="pincode">Pincode *</label>            <input type="number" id="pincode" name="pincode"></pre>
+            </fieldset><br>
+            <fieldset>
+                <legend><h2>Pass Type Details</h2></legend>
+                <pre><label for="city">City *</label>              <select  id="city"> <option value="Hyderabad">Hyderabad</option><option value="Hyderabad">Hyderabad</option></select></pre>
+                <pre><label for="passtype">Pass type *</label>         <select id="passtype"><option value="select">select</option><option value="Greater pass">Greater pass</option><option value="General Ordinary route Pass MTLY">General Ordinary route Pass MTLY</option><option value="General MetroExpress route Pass MTLY">General MetroExpress route Pass MTLY</option><option value="Ordinary pass">Ordinary pass</option><option value="MetroExpress pass">MetroExpress pass</option><option value="MetroDelux pass">MetroDelux pass</option></select></pre>
+            </fieldset><br>
+            <fieldset>
+                <legend><h2>Mode of Payment&Pass collection</h2></legend>
+                <pre><label for="Payment Mode">Payment Mode *</label>                                <select id="Payment Mode"><option value="select">select payment mode</option><option value="payment at counter">payment at counter</option></select></pre>
+                <pre><label for="Pass delivery mode">Pass delivery mode *</label>                          <select  id="Pass delivery mode"><option value="select pass delivery mode">select pass delivery mode</option><option value="at counter">at counter</option></select></pre>
+                <pre><label for="center at which you want to collect pass">center at which you want to collect pass *</label>    <select id="center at which you want to collect pass"><option value="select">select</option><option value="RTC Hyd-17/12/2024">RTC Hyd-17/12/2024</option></select></pre>
+            </fieldset>
+            <center>
+               <pre>
+        <img src="./captcha.jpeg" alt="Captcha" width="200"><br>
+        
+        <input type="text"><br>
+        
+        <input type="submit">
+               </pre>
+            </center>
+    </form>
+
+</body>
+</html>
